@@ -1,182 +1,140 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Coinstore Exchange - Cryptocurrency Exchange for Bitcoin, Ethereum & Altcoins</title>
-  <meta name="description" content="Coinstore Exchange is a secure, fast, and user-friendly cryptocurrency exchange where you can trade Bitcoin, Ethereum, and a wide range of altcoins. Advanced trading tools, low fees, deep liquidity, and industry-grade security." />
-  <meta name="keywords" content="Coinstore, Coinstore Exchange, cryptocurrency exchange, Bitcoin exchange, Ethereum trading, altcoins, crypto trading, buy crypto, sell crypto" />
-  <link rel="canonical" href="https://www.coinstore.com/coinstore-exchange" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Coinstore Exchange - Cryptocurrency Exchange for Bitcoin, Ethereum & Altcoins" />
-  <meta property="og:description" content="Secure, fast, and user-friendly crypto trading — trade Bitcoin, Ethereum and many altcoins with low fees and advanced tools on Coinstore Exchange." />
-  <meta property="og:url" content="https://www.coinstore.com/coinstore-exchange" />
-  <meta property="og:image" content="https://www.coinstore.com/assets/images/coinstore-og.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Coinstore Exchange - Cryptocurrency Exchange for Bitcoin, Ethereum & Altcoins" />
-  <meta name="twitter:description" content="Secure, fast, and user-friendly crypto trading — trade Bitcoin, Ethereum and many altcoins with low fees and advanced tools on Coinstore Exchange." />
-  <meta name="twitter:image" content="https://www.coinstore.com/assets/images/coinstore-og.jpg" />
-
-  <!-- Minimal critical CSS for quick render -->
+  <meta name="description" content="Coinstore Exchange is a secure, fast, and user-friendly cryptocurrency trading platform offering Bitcoin, Ethereum and dozens of altcoins. Trade spot, stake, and manage your crypto with low fees and advanced tools.">
+  <meta name="keywords" content="Coinstore, cryptocurrency exchange, Bitcoin, Ethereum, altcoins, crypto trading, staking, wallet">
+  <link rel="canonical" href="https://www.coinstore.com/">
   <style>
-    :root{--accent:#0b66b3;--muted:#6b7280;--bg:#ffffff}
-    html,body{height:100%}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#0f1724;background:var(--bg);line-height:1.6}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
-    header{display:flex;justify-content:space-between;align-items:center;gap:20px}
-    .logo{display:flex;align-items:center;gap:12px}
-    h1{font-size:clamp(1.4rem,2.5vw,2rem);margin:8px 0}
-    .lead{color:var(--muted);font-size:1.03rem}
-    nav a.cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
-    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:22px}
-    article{min-width:0}
-    section{margin:18px 0}
-    h2{font-size:1.125rem;margin:12px 0}
-    footer{border-top:1px solid #eef2f7;padding:20px 0;margin-top:30px;color:var(--muted);text-align:center}
-    .card{background:#f8fafc;padding:18px;border-radius:10px}
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#00d1b2;--muted:#9aa6b2;--glass:rgba(255,255,255,0.03)}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.6;margin:0;background:linear-gradient(180deg,#07101a,#081428);color:#e6eef6}
+    .container{max-width:1100px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6ee7b7);display:flex;align-items:center;justify-content:center;color:#042029;font-weight:700}
+    h1{font-size:28px;margin:8px 0}
+    p.lead{color:var(--muted);max-width:60%}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6);margin-top:20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .feature{background:var(--glass);padding:16px;border-radius:10px}
     ul{padding-left:1.1rem}
-    @media(max-width:980px){main{grid-template-columns:1fr}nav{display:none}}
+    .faq dt{font-weight:700;margin-top:12px}
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+    a{color:var(--accent);text-decoration:none}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.lead{max-width:100%}}
   </style>
-
-  <!-- Structured data: Organization + FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"Organization",
+    "@type":"WebSite",
     "name":"Coinstore Exchange",
-    "url":"https://www.coinstore.com",
-    "logo":"https://www.coinstore.com/assets/images/logo.png",
-    "sameAs":[
-      "https://twitter.com/coinstore",
-      "https://www.linkedin.com/company/coinstore"
-    ]
+    "url":"https://www.coinstore.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.coinstore.com/search?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
   }
   </script>
-
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <header>
-      <div class="logo" itemscope itemtype="https://schema.org/Organization">
-        <img src="/assets/images/logo.png" alt="Coinstore logo" width="56" height="56" />
+      <div class="brand">
+        <div class="logo">CS</div>
         <div>
-          <strong itemprop="name">Coinstore Exchange</strong><br/>
-          <small style="color:var(--muted)">Cryptocurrency Exchange • BTC • ETH • Altcoins</small>
+          <div style="font-size:12px;color:var(--muted)">Coinstore Exchange</div>
+          <h1>Fast, Secure Trading for Bitcoin, Ethereum & Altcoins</h1>
         </div>
       </div>
-      <nav>
-        <a class="cta" href="https://www.coinstore.com/signup" rel="nofollow">Create Account</a>
+      <nav aria-label="primary">
+        <a href="#features">Features</a> &nbsp;|&nbsp; <a href="#how">How it Works</a> &nbsp;|&nbsp; <a href="#faq">FAQ</a>
       </nav>
     </header>
 
-    <main>
-      <article>
-        <h1>Coinstore Exchange — Cryptocurrency Exchange for Bitcoin, Ethereum & Altcoins</h1>
-        <p class="lead">Coinstore Exchange delivers a secure, fast, and intuitive trading experience for investors and traders of all levels. Trade top cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH), discover promising altcoins, and access advanced order types with low fees and institutional-grade security.</p>
+    <section class="card" aria-labelledby="intro">
+      <h2 id="intro">About Coinstore Exchange</h2>
+      <p class="lead">Coinstore Exchange is designed for traders of all levels who want a reliable, transparent, and accessible platform to buy, sell, and manage cryptocurrency. Our platform supports major coins like Bitcoin (BTC) and Ethereum (ETH) as well as hundreds of altcoins, providing deep liquidity, responsive customer support, and enterprise-grade security. Whether you’re executing your first trade or monitoring an institutional portfolio, Coinstore delivers the tools and performance you need.</p>
 
-        <section>
-          <h2>What is Coinstore Exchange?</h2>
-          <p>Coinstore Exchange is a digital asset trading platform built to provide reliable access to global cryptocurrency markets. Our platform combines a high-performance matching engine, deep liquidity from multiple providers, and a user-friendly interface so both beginners and pro traders can place orders quickly and confidently. We focus on security, transparency, and continuous innovation to support various trading strategies — from spot trading to limit orders and beyond.</p>
-        </section>
-
-        <section>
-          <h2>Core Features & Benefits</h2>
-          <p>Coinstore offers a set of features designed to meet the needs of modern crypto users:</p>
-          <ul>
-            <li><strong>Wide asset coverage:</strong> Trade Bitcoin, Ethereum, BNB, Solana and hundreds of altcoins across major blockchains.</li>
-            <li><strong>Low fees & tight spreads:</strong> Competitive pricing model with discounts for high-volume traders.</li>
-            <li><strong>Advanced trading tools:</strong> Real-time charts, depth-of-book, and a responsive order entry panel.</li>
-            <li><strong>Security-first approach:</strong> Most assets held in cold storage, encrypted wallets, and mandatory 2FA for withdrawals.</li>
-            <li><strong>Fast deposits & withdrawals:</strong> Multiple fiat on-ramp options and crypto rails for quick transfers.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>How to Get Started</h2>
-          <ol>
-            <li>Visit the official site and <a href="https://www.coinstore.com/signup">create an account</a>.</li>
-            <li>Complete email verification and enable two-factor authentication (2FA).</li>
-            <li>Deposit funds via crypto or supported fiat on-ramp.</li>
-            <li>Choose your market, select an order type, and start trading.</li>
-          </ol>
-          <p>We recommend starting with a small trade to familiarize yourself with the interface and fees.</p>
-        </section>
-
-        <section>
-          <h2>Navigating DeFi & Altcoins Safely</h2>
-          <p>While exploring new tokens and DeFi projects, always perform due diligence. Verify token contract addresses, check project audits, and be cautious with permissioned smart contracts. Coinstore lists tokens after security review, but users should remain informed and avoid sharing private keys or seed phrases.</p>
-        </section>
-
-        <section>
-          <h2>Security & Compliance</h2>
-          <p>Security is central to Coinstore’s operations. We use multi-layered protections including cold storage for the majority of holdings, encrypted key management, regular security audits, and optional withdrawal whitelists. Where applicable, users may be required to complete KYC (Know Your Customer) to access full platform features. Always enable 2FA and use strong, unique passwords for your account.</p>
-        </section>
-
-        <section>
-          <h2>Frequently Asked Questions (FAQ)</h2>
-
-          <div class="card" itemscope itemtype="https://schema.org/FAQPage">
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">Is Coinstore Exchange regulated?</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">Coinstore operates in compliance with regulations in supported jurisdictions and follows AML/KYC guidelines where required. Regulation status may vary by country — check our <a href="https://www.coinstore.com/legal">Legal & Compliance</a> page for details.</p>
-              </div>
-            </div>
-
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">What fees does Coinstore charge?</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">Fees depend on trading volume and pair. We offer a transparent maker/taker fee schedule and periodic discounts. View the full breakdown on our <a href="https://www.coinstore.com/fees">Fees</a> page.</p>
-              </div>
-            </div>
-
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">How long do withdrawals take?</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">Crypto withdrawal times depend on the network. Most withdrawals are processed promptly, but network congestion can add delays. Fiat withdrawals times vary by payment method and region.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Official Links & Resources</h2>
-          <ul>
-            <li><a href="https://www.coinstore.com">Coinstore Home</a></li>
-            <li><a href="https://www.coinstore.com/signup">Create Account</a></li>
-            <li><a href="https://www.coinstore.com/markets">Markets</a></li>
-            <li><a href="https://www.coinstore.com/fees">Fees</a></li>
-            <li><a href="https://support.coinstore.com">Support Center</a></li>
-            <li><a href="https://blog.coinstore.com">Blog & Announcements</a></li>
-            <li><a href="https://twitter.com/coinstore">Twitter</a> • <a href="https://www.linkedin.com/company/coinstore">LinkedIn</a></li>
-          </ul>
-        </section>
-
-      </article>
-
-      <aside>
-        <div class="card">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="https://www.coinstore.com/security">Security</a></li>
-            <li><a href="https://www.coinstore.com/support">Help Center</a></li>
-            <li><a href="https://www.coinstore.com/kyc">KYC & Verification</a></li>
-            <li><a href="https://www.coinstore.com/contact">Contact Us</a></li>
-          </ul>
-          <p style="color:var(--muted);margin-top:12px;font-size:0.95rem">Need fast support? Visit our Support Center or open a ticket for account help and withdrawal inquiries.</p>
+      <div class="grid" id="features">
+        <div class="feature">
+          <h3>Secure Wallet & Custody</h3>
+          <p>We employ cold storage, multi-signature wallets, and regular security audits. Your funds are protected with industry-standard practices and insurance where available.</p>
         </div>
-      </aside>
-    </main>
+        <div class="feature">
+          <h3>Low Fees & Transparent Pricing</h3>
+          <p>Competitive maker/taker fees, volume discounts, and transparent fee schedules so you always know what you pay. No hidden charges.</p>
+        </div>
+        <div class="feature">
+          <h3>Advanced Trading Tools</h3>
+          <p>Real-time charts, limit and market orders, stop-loss and take-profit, plus API access for algorithmic traders and bots.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <h3 id="how">How Coinstore Works</h3>
+        <p>Getting started is quick: create an account, complete identity verification for KYC-compliant features, and deposit funds using bank transfers, credit/debit, or crypto deposits. Use the simple Buy/Sell interface for instant orders, or switch to Advanced Trading to access order books and historical charts. Withdrawals are processed with multiple verification steps to keep assets safe.</p>
+
+        <h3>Trading Pairs & Markets</h3>
+        <p>Coinstore lists a variety of trading pairs including BTC/USD, ETH/USD, BTC/ETH and many altcoin pairs. We prioritize liquidity and carefully review all token listings for regulatory and technical compliance.</p>
+
+        <h3>Security & Compliance</h3>
+        <p>Security is central: two-factor authentication (2FA), withdrawal whitelists, IP/session management, and encryption at rest and in transit. We comply with local regulations and maintain robust KYC/AML programs to protect the ecosystem.</p>
+
+        <h3>Fees & Limits</h3>
+        <p>Fee tiers are based on 30-day trading volume. Small traders benefit from low entry-level fees while high-volume traders and market makers receive discounted rates. Deposit methods may have separate processing fees. Check the Fees page for a detailed breakdown.</p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="faq">
+      <h2 id="faq">Frequently Asked Questions</h2>
+      <dl class="faq">
+        <dt>Is Coinstore safe to use?</dt>
+        <dd>Yes. We follow industry best practices, including cold storage and third-party audits. Users should enable 2FA and follow security hygiene.</dd>
+
+        <dt>What coins can I trade?</dt>
+        <dd>Coinstore supports Bitcoin, Ethereum and a curated selection of altcoins. New listings are evaluated against technical, legal, and liquidity criteria.</dd>
+
+        <dt>How long do withdrawals take?</dt>
+        <dd>Crypto withdrawals are typically processed within minutes after approval and confirmations; fiat withdrawals follow banking timelines, which may take 1–5 business days depending on the method and destination.</dd>
+
+        <dt>Do you offer staking or savings?</dt>
+        <dd>Yes. Select assets may be eligible for staking or yield programs. Terms and APY vary by asset and are listed on the Staking page.</dd>
+
+        <dt>Where can I get help?</dt>
+        <dd>Support is available via our Help Center and official channels listed below. For urgent account issues, use the verified support link on the website.</dd>
+      </dl>
+
+      <!-- Structured FAQ for search engines -->
+      <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"Is Coinstore safe to use?","acceptedAnswer":{"@type":"Answer","text":"Yes. We follow industry best practices, including cold storage and third-party audits. Enable 2FA for extra security."}},
+          {"@type":"Question","name":"What coins can I trade?","acceptedAnswer":{"@type":"Answer","text":"Bitcoin, Ethereum and a curated selection of altcoins. We review listings for security and compliance."}},
+          {"@type":"Question","name":"How long do withdrawals take?","acceptedAnswer":{"@type":"Answer","text":"Crypto withdrawals are usually fast after approval; fiat withdrawals follow banking timelines of 1–5 business days."}}
+        ]
+      }
+      </script>
+
+      <h3>Official Links</h3>
+      <ul>
+        <li><a href="https://www.coinstore.com/" target="_blank" rel="noopener">Official Website</a></li>
+        <li><a href="https://www.coinstore.com/support" target="_blank" rel="noopener">Support & Help Center</a></li>
+        <li><a href="https://twitter.com/coinstore" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="https://t.me/coinstore" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="https://blog.coinstore.com/" target="_blank" rel="noopener">Official Blog</a></li>
+      </ul>
+    </section>
 
     <footer>
-      <small>&copy; <span id="year"></span> Coinstore Exchange — All rights reserved. <a href="https://www.coinstore.com/privacy">Privacy Policy</a> • <a href="https://www.coinstore.com/terms">Terms of Service</a></small>
+      <p>&copy; <span id="year"></span> Coinstore Exchange. All rights reserved. This page is a sample marketing landing page and should be customized with real legal, compliance, and contact information before publication.</p>
+      <p style="margin-top:8px">Contact: <a href="mailto:support@coinstore.com">support@coinstore.com</a></p>
     </footer>
-  </div>
+  </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
